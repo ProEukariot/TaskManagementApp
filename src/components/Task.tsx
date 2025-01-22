@@ -1,5 +1,5 @@
 import { Checkbox } from "@/components/ui/checkbox"
-import { ChangeEvent, MouseEventHandler, ReactNode, useState } from "react";
+import { ChangeEvent, ReactNode, useState } from "react";
 import { Pencil, X, Check, Trash } from "lucide-react";
 import { Button } from "./ui/button";
 import { Label } from "./ui/label";
@@ -20,7 +20,7 @@ type TaskLayoutProps = {
 };
 
 const TaskLayout = ({ handlers, actions }: TaskLayoutProps) => (
-    <div className="flex items-center gap-2 border border-border rounded-md bg-background p-4">
+    <div className="flex items-center gap-2">
         <div className="flex items-center flex-nowrap w-full gap-2">
             {handlers}
         </div>
