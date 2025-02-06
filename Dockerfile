@@ -9,6 +9,8 @@ RUN yarn install --frozen-lockfile
 
 COPY ./ ./
 
+RUN yarn add -D terser
+
 RUN yarn run build
 
 # Runtime image
